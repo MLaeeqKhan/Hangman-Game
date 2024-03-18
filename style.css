@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: bold;
+    font-style: normal
+}
+
+html {
+    font-size: 100%;
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+
+    .header .nav .menu {
+
+        width: 16.4rem;
+    }
+     .icon .menu-list ul li{
+        margin:1rem; 
+    }
+    .header .nav .life-line {
+
+        width: 13rem;
+    }
+
+    .header .nav .life-line .line .inner-line {
+        border: 3px solid darkblue;
+        border-radius: 10px;
+        width: 2.5rem;
+    }
+
+    .header .main .gues-keyboards .keyboards .inner-keyboards .first-layer .button {
+        width: 2.7rem;
+        height: 3.4rem;
+        border-radius: 5px;
+        margin: 1px;
+
+    }
+
+    .header .main .gues-keyboards .keyboards .inner-keyboards .second-layer .button {
+        width: 2.7rem;
+        height: 3.4rem;
+        border-radius: 5px;
+        margin: 1px;
+
+    }
+
+    .header .main .gues-keyboards .keyboards .inner-keyboards .third-layer .button {
+        width: 2.7rem;
+        height: 3.4rem;
+        border-radius: 5px;
+        margin: 1px;
+
+    }
+
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 45%;
+    }
+
+    .header .nav .menu .countries {
+        font-size: 2rem;
+    }
+
+    .header .nav .menu {
+        margin-right: 9.5rem;
+    }
+
+   
+    .header .nav .menu .countries {
+        margin-right: 3rem;
+    }
+
+    .header .nav .life-line .line {
+
+        width: 5rem;
+        height: 1.7rem;
+    }
+
+    .header .nav .life-line .line .inner-line {
+        border: 3px solid darkblue;
+        border-radius: 10px;
+        width: 2.5rem;
+    }
+    .header .main .gues-keyboards .gues-words .top-gues-words .gues, .header .main .gues-keyboards .gues-words .buttom-gues-words .gues {
+       
+        width: 3.7rem;
+        height: 3.4rem;
+        margin: 0.4rem;
+        border-radius: 5px;
+
+    }
+    
+
+    .header .main .gues-keyboards .keyboards .inner-keyboards .first-layer .button,.header .main .gues-keyboards .keyboards .inner-keyboards .second-layer .button,.header .main .gues-keyboards .keyboards .inner-keyboards .third-layer .button {
+        width: 3.7rem;
+        height: 3.4rem;
+        border-radius: 5px;
+        margin: 1px;
+
+    }
+
+   
+}
+
+
+
+
+.header {
+    background-image: url(pexels-eberhard-grossgasteiger-1303431.jpg);
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.header::before {
+    content: "";
+    background-color: rgba(74, 74, 179, 0.906);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+    color: white;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11rem;
+    
+}
+.menu-list{
+    position: fixed;
+    top: 5rem;
+    left: 5rem;
+    overflow: hidden;
+    padding-right: 10px;
+    width: 0;
+    height: 0;
+    border-radius: 0px 50px 50px 50px;
+    background-color: rgba(41, 41, 85, 0.199) ;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+.menu-list ul li{
+    list-style: none;
+    color: rgb(11, 11, 77);
+    margin:2rem; 
+}
+.Setting{
+    display: flex;
+    justify-content: center;
+}
+.Setting i{
+color: white;
+margin-right: 5px;
+}
+.countries {
+    font-size: 30px;
+    z-index: 1;
+
+}
+
+.icon {
+    /* background: plum; */
+    background: linear-gradient(plum, plum)top, linear-gradient(plum, rgba(69, 180, 224, 0.5))bottom;
+    background-size: 100% 50%;
+    padding: 10px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.life-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
+}
+
+.line {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: white;
+    width: 8rem;
+    height: 1rem;
+    border-radius: 10px;
+    padding: 0px 7px;
+}
+
+.inner-line {
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    width: 4rem;
+}
+
+.heart-icon i {
+    font-size: 30px;
+    background: linear-gradient(plum, plum)top, linear-gradient(plum, rgba(69, 180, 224, 0.5))bottom;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.main {
+    z-index: 1;
+    margin-top: 5rem;
+    /* margin-bottom: 2rem; */
+
+}
+
+.gues-keyboards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.top-gues-words,
+.buttom-gues-words {
+    display: flex;
+    justify-content: center;
+}
+
+.gues {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3.4rem;
+    background-color: rgba(69, 180, 224, 0.797);
+    color: white;
+    margin: 0.4rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.gues:empty {
+    background-color: rgba(54, 54, 170, 0.783);
+}
+
+.keyboards {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.button {
+    color: darkblue;
+    width: 3rem;
+    height: 3.4rem;
+    border-radius: 10px;
+    margin: 0.2rem;
+    border: none;
+
+}

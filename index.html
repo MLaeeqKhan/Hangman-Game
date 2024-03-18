@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+    <title>Hangman Game</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="menu" onclick="
+            handleNavBar()">
+                <div class="icon"><i class="fa-solid fa-bars" >
+                        <div class="menu-list" id="menu-list">
+                            <ul>
+                                <li> Mode</li>
+                                <li>Sensitivity</li>
+                                <li class="Setting"> <i class="fa fa-cog" aria-hidden="true"></i>Setting</li>
+                            </ul>
+                        </div>
+                    </i></div>
+                <div class="countries">Countries</div>
+            </div>
+
+            <div class="life-line">
+                <div class="line">
+                    <div class="inner-line"></div>
+                </div>
+                <div class="heart-icon"><i class="fa-solid fa-heart"></i></div>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="gues-keyboards">
+                <div class="gues-words">
+
+                    <div class="top-gues-words">
+
+                        <div class="gues">U</div>
+                        <div class="gues">N</div>
+                        <div class="gues">I</div>
+                        <div class="gues"></div>
+                        <div class="gues"></div>
+                        <div class="gues">D</div>
+                    </div>
+
+
+                    <div class="buttom-gues-words">
+
+                        <div class="gues"></div>
+                        <div class="gues">I</div>
+                        <div class="gues">N</div>
+                        <div class="gues"></div>
+                        <div class="gues">D</div>
+                        <div class="gues">O</div>
+                        <div class="gues"></div>
+
+                    </div>
+                </div>
+                <div class="keyboards">
+                    <div class="inner-keyboards">
+                        <div class="first-layer">
+                            <button class="button">A</button>
+                            <button class="button">B</button>
+                            <button class="button">C</button>
+                            <button class="button">D</button>
+                            <button class="button">E</button>
+                            <button class="button">F</button>
+                            <button class="button">G</button>
+                            <button class="button">H</button>
+                            <button class="button">I</button>
+
+                        </div>
+                        <div class="second-layer">
+                            <button class="button">J</button>
+                            <button class="button">K</button>
+                            <button class="button">L</button>
+                            <button class="button">M</button>
+                            <button class="button">N</button>
+                            <button class="button">O</button>
+                            <button class="button">P</button>
+                            <button class="button">Q</button>
+                            <button class="button">R</button>
+                        </div>
+                        <div class="third-layer">
+                            <button class="button">S</button>
+                            <button class="button">T</button>
+                            <button class="button">U</button>
+                            <button class="button">V</button>
+                            <button class="button">W</button>
+                            <button class="button">X</button>
+                            <button class="button">Y</button>
+                            <button class="button">Z</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </header>
+</body>
+<script>
+    function handleNavBar(){
+    const nav = document.getElementById("menu-list");
+
+    if (nav.style.height === "0px" || nav.style.width==="0px") {
+        nav.style.height = nav.scrollHeight + "px";
+        nav.style.width= nav.scrollWidth + "px"
+    } else {
+        nav.style.height = "0";
+        nav.style.width = "0";
+    }
+
+    }
+</script>
+</html>
