@@ -28,7 +28,12 @@ html {
     html {
         font-size: 65%;
     }
-
+    .header .main {
+        margin-top: 2rem;
+    }
+    .header .main .gues-keyboards .keyboards {
+       margin-top: 2rem;
+   }
     .header .nav .menu {
 
         width: 16.4rem;
@@ -71,6 +76,14 @@ html {
 
     }
 
+}
+@media(max-width:425px){
+    .header .main {
+        margin-top: 2rem;
+    }
+    .header .main .gues-keyboards .keyboards {
+       margin-top: 2rem;
+   }
 }
 
 @media (max-width: 375px) {
