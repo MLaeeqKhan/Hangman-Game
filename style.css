@@ -9,6 +9,21 @@
 html {
     font-size: 100%;
 }
+@media(max-width:2560px){
+   .header .main {
+        margin-top: 10px;
+        /* margin-bottom: 2rem; */
+    
+    }
+}
+@media(max-width:1440px){
+    .header .main {
+         margin-top: -20px;
+     }
+     .header .main .gues-keyboards .keyboards {
+        margin-top: .1rem;
+    }
+ }
 @media (max-width: 768px) {
     html {
         font-size: 65%;
